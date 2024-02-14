@@ -62,9 +62,31 @@ def question1():
     answer["level2_left"] = level2_left
     answer["level2_right"] = level2_right
 
+    import utils as u
+    tree = u.BinaryTree("smoking")
+    A = tree.insert_left("cough")
+    B = tree.insert_right("radon")
+    # Four leaves
+    A.insert_left("yes")
+    A.insert_right("no")
+    B.insert_left("yes")
+    B.insert_right("no")
+
+    answer["tree"] = tree
     # Fill up `construct_tree``
     # tree, training_error = construct_tree()
     tree = u.BinaryTree("root")  # MUST STILL CREATE THE TREE *****
+    import utils as u
+    tree = u.BinaryTree("smoking")
+    A = tree.insert_left("cough")
+    B = tree.insert_right("radon")
+    # Four leaves
+    A.insert_left("yes")
+    A.insert_right("no")
+    B.insert_left("yes")
+    B.insert_right("no")
+
+    answer["tree"] = tree
     answer["tree"] = tree  # use the Tree structure
     # answer["training_error"] = training_error
     answer["training_error"] = 0.0  
@@ -226,7 +248,21 @@ def question6():
 
     # Use u.BinaryTree to define the tree. Create your tree.
     # Replace "root node" by the proper node of the form "z <= float"
+    import utils as u
+    tree = u.BinaryTree("x<=0.5")
+    tree.insert_right("A")
+    b = tree.insert_left("y<=0.4")
+    b.insert_left("A")
+    b.insert_right("B")
+
     tree = u.BinaryTree("root note")
+    import utils as u
+    tree = u.BinaryTree("x<=0.5")
+    tree.insert_right("A")
+    b = tree.insert_left("y<=0.4")
+    b.insert_left("A")
+    b.insert_right("B")
+
 
     answer["c, tree"] = tree
 
