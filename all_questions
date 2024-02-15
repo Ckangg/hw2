@@ -23,7 +23,7 @@ def question1():
     level2_left = {}
     level2_right = {}
 
-    level1["smoking"] = -1
+    level1["smoking"] = 1
     level1["smoking_info_gain"] = 0.278
 
     level1["cough"] = -1
