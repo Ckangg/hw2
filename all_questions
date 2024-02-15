@@ -112,6 +112,7 @@ def question2():
 
     # Use the Binary Tree structure to construct the tree
     # Answer is an instance of BinaryTree
+    import utils as u    
     tree = u.BinaryTree("x<=0.7")
 
     # Insert the left side of the tree
