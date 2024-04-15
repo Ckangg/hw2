@@ -62,7 +62,7 @@ def question1():
     answer["level2_left"] = level2_left
     answer["level2_right"] = level2_right
 
-    import utils as u
+    #import utils as u
     tree = u.BinaryTree("smoking")
     A = tree.insert_left("cough")
     B = tree.insert_right("radon")
@@ -96,7 +96,7 @@ def question2():
 
     # Use the Binary Tree structure to construct the tree
     # Answer is an instance of BinaryTree
-    import utils as u    
+    #import utils as u    
     tree = u.BinaryTree("x<=0.7")
 
     # Insert the left side of the tree
@@ -250,7 +250,7 @@ def question6():
 
     # Use u.BinaryTree to define the tree. Create your tree.
     # Replace "root node" by the proper node of the form "z <= float"
-    import utils as u
+    #import utils as u
     tree = u.BinaryTree("x<=0.5")
     tree.insert_right("A")
     b = tree.insert_left("y<=0.4")
