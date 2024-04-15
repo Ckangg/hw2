@@ -101,7 +101,7 @@ def question2():
 
     # Insert the left side of the tree
     y_06_left = tree.insert_left("y<=0.6")
-    b_left = y_06_left.insert_left("B")  # Terminal node B
+    B = y_06_left.insert_left("B")  # Terminal node B
     x_02 = y_06_left.insert_right("x<=0.2")
     a_left = x_02.insert_right("A")  # Terminal node A
     y_08 = x_02.insert_left("y<=0.8")
