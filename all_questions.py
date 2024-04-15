@@ -73,22 +73,6 @@ def question1():
     B.insert_right("no")
 
     answer["tree"] = tree
-    # Fill up `construct_tree``
-    # tree, training_error = construct_tree()
-    tree = u.BinaryTree("root")  # MUST STILL CREATE THE TREE *****
-    import utils as u
-    tree = u.BinaryTree("smoking")
-    A = tree.insert_left("cough")
-    B = tree.insert_right("radon")
-    # Four leaves
-    A.insert_left("yes")
-    A.insert_right("no")
-    B.insert_left("yes")
-    B.insert_right("no")
-
-    answer["tree"] = tree
-    answer["tree"] = tree  # use the Tree structure
-    # answer["training_error"] = training_error
     answer["training_error"] = 0.0  
 
     return answer
@@ -130,28 +114,7 @@ def question2():
     y_06_right = y_03_right.insert_right("y<=0.6")
     c_right = y_06_right.insert_left("C")  # Terminal node C
     a_far_right = y_06_right.insert_right("A")  # Terminal node A
-    tree = u.BinaryTree("Root")
-    import utils as u
-
-    # Create the root of the tree with the first condition
-    tree = u.BinaryTree("x<=0.7")
-
-    # Insert the left side of the tree
-    y_06_left = tree.insert_left("y<=0.6")
-    b_left = y_06_left.insert_left("B")  # Terminal node B
-    x_02 = y_06_left.insert_right("x<=0.2")
-    a_left = x_02.insert_right("A")  # Terminal node A
-    y_08 = x_02.insert_left("y<=0.8")
-    c_left = y_08.insert_left("C")  # Terminal node C
-    b_right = y_08.insert_right("B")  # Terminal node B
-
-    # Insert the right side of the tree
-    y_03_right = tree.insert_right("y<=0.3")
-    a_right = y_03_right.insert_left("A")  # Terminal node A
-    y_06_right = y_03_right.insert_right("y<=0.6")
-    c_right = y_06_right.insert_left("C")  # Terminal node C
-    a_far_right = y_06_right.insert_right("A")  # Terminal node A
-
+    #tree = u.BinaryTree("Root")
     answer["(d) full decision tree"] = tree
 
     return answer
@@ -167,7 +130,7 @@ def question3():
     answer["(a) Gini, overall"] = 0.5
 
     # float
-    answer["(b) Gini, ID"] = 0
+    answer["(b) Gini, ID"] = 0.0
     answer["(c) Gini, Gender"] = 0.48
     answer["(d) Gini, Car type"] = 0.1625
     answer["(e) Gini, Shirt type"] = 0.491
@@ -293,16 +256,6 @@ def question6():
     b = tree.insert_left("y<=0.4")
     b.insert_left("A")
     b.insert_right("B")
-
-    tree = u.BinaryTree("root note")
-    import utils as u
-    tree = u.BinaryTree("x<=0.5")
-    tree.insert_right("A")
-    b = tree.insert_left("y<=0.4")
-    b.insert_left("A")
-    b.insert_right("B")
-
-
     answer["c, tree"] = tree
 
     return answer
@@ -313,7 +266,7 @@ def question7():
     answer = {}
 
     # float
-    answer["a, info gain, ID"] = 1
+    answer["a, info gain, ID"] = 1.0
     answer["b, info gain, Handedness"] = 0.53
 
     # string: "ID" or "Handedness"
